@@ -4,8 +4,27 @@
 To get started, make sure you have Nodejs and mongoDB installed on your system, and then clone this repository.
 ### in first time
 you will need to import sampleDB into your mongoDB 
-Next, navigate in your terminal to the directory you cloned this, and run 
 
+you can use this end point to login 
+```sh
+localhost:3000/login
+```
+system has 3 users 
+1 - ADMIN 
+{
+    "password":"password",
+    "phone":"01211111111"
+}
+2 - AGENT
+{
+    "password":"password",
+    "phone":"01111111111"
+}
+3 - CLIENT
+{
+    "password":"password",
+    "phone":"01011111111"
+}
 ### ***In Development Mode***
 ```sh
 npm i 
@@ -23,4 +42,6 @@ http://localhost:3000/
 ```sh
 http://localhost:3000/api-docs/
 ```
+
+
 
