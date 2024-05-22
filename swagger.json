@@ -1,0 +1,192 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Deal App API",
+        "description": "Find out how your APIs work",
+        "license": {}
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "securityDefinitions": {},
+    "paths": {
+        "/request": {
+            "post": {
+                "summary": "Create Request",
+                "tags": [
+                    "Request"
+                ],
+                "description": "Create Property Request",
+                "parameters": [
+                    {
+                        "name": "Property",
+                        "in": "body",
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/Property"
+                        }
+                    },
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "an authorization header",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Create Sucess",
+                        "schema": {
+                            "$ref": "#/definitions/Property"
+                        }
+                    },
+                    "401": {
+                        "description": "You don't have access for this operation"
+                    }
+                }
+            }
+        },
+        "/stats": {
+            "get": {
+                "summary": "Get Admin Statistics",
+                "tags": [],
+                "description": "Get Admin Statistics",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "",
+                        "schema": {}
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "",
+                        "schema": {}
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get Sucess",
+                        "schema": {
+                            "$ref": "#/definitions/Stats"
+                        }
+                    },
+                    "401": {
+                        "description": "You don't have access for this operation"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Property": {
+            "properties": {
+                "propertyType": {
+                    "type": "string",
+                    "required": true,
+                    "enum": [
+                        "VILLA",
+                        "HOUSE",
+                        "LAND",
+                        "APARTMENT"
+                    ]
+                },
+                "area": {
+                    "type": "number",
+                    "required": true
+                },
+                "price": {
+                    "type": "number",
+                    "required": true
+                },
+                "city": {
+                    "type": "string",
+                    "required": true
+                },
+                "district": {
+                    "type": "string",
+                    "required": true
+                },
+                "description": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "Stats": {
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "username": {
+                                "type": "string"
+                            },
+                            "phone": {
+                                "type": "string"
+                            },
+                            "role": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "updatedAt": {
+                                "type": "string"
+                            },
+                            "requestsCount": {
+                                "type": "number"
+                            },
+                            "totalRequestsAmount": {
+                                "type": "number"
+                            },
+                            "adsCount": {
+                                "type": "number"
+                            },
+                            "totalAdsAmount": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "total": {
+                    "type": "number"
+                },
+                "page": {
+                    "type": "number"
+                },
+                "limit": {
+                    "type": "number"
+                },
+                "hasNextPage": {
+                    "type": "boolean"
+                },
+                "hasPreviousPage": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}

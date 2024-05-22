@@ -1,0 +1,33 @@
+{
+    "_id" : ObjectId("664d0d09bfcadf9baab25337"),
+    "username" : "client",
+    "phone" : "01011111111",
+    "password" : "$2b$10$AqUywnPboW8GUs0qozYOcO/c9pBsuZORiFHMxCe6uccDmsK7oie4y",
+    "role" : "CLIENT",
+    "status" : "ACTIVE",
+    "createdAt" : ISODate("2024-05-21T21:07:21.153+0000"),
+    "updatedAt" : ISODate("2024-05-21T21:07:21.153+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("664d17590dbfccb989e18594"),
+    "username" : "agent",
+    "phone" : "01111111111",
+    "password" : "$2b$10$fo08KASn87lEyoqHI2kAVetYWL2ltA0enykZywyXSDEjxJ7MTtiA2",
+    "role" : "AGENT",
+    "status" : "ACTIVE",
+    "createdAt" : ISODate("2024-05-21T21:51:21.843+0000"),
+    "updatedAt" : ISODate("2024-05-21T21:51:21.843+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("664df1686b2530b0f6f21acd"),
+    "username" : "admin",
+    "phone" : "01211111111",
+    "password" : "$2b$10$UG.28no3U1ejAxbHX1GMCuPneUXVD6/PCrJplNbPd23TxH2Ca6Uiq",
+    "role" : "ADMIN",
+    "status" : "ACTIVE",
+    "createdAt" : ISODate("2024-05-22T13:21:44.627+0000"),
+    "updatedAt" : ISODate("2024-05-22T13:21:44.627+0000"),
+    "__v" : NumberInt(0)
+}

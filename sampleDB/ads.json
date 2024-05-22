@@ -1,0 +1,52 @@
+{
+    "_id" : ObjectId("664d176d0dbfccb989e18597"),
+    "propertyType" : "HOUSE",
+    "area" : NumberInt(100),
+    "price" : NumberInt(100),
+    "city" : "asd",
+    "district" : "asd",
+    "description" : "asd",
+    "userId" : "664d17590dbfccb989e18594",
+    "createdAt" : ISODate("2024-05-21T21:51:41.749+0000"),
+    "updatedAt" : ISODate("2024-05-21T21:51:41.749+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("664d458dade7a2b9c8c7fc58"),
+    "propertyType" : "HOUSE",
+    "area" : NumberInt(100),
+    "price" : NumberInt(100),
+    "city" : "asd",
+    "district" : "asd",
+    "description" : "asd",
+    "userId" : "664d17590dbfccb989e18594",
+    "createdAt" : ISODate("2024-05-22T01:08:29.551+0000"),
+    "updatedAt" : ISODate("2024-05-22T01:08:29.551+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("664d46157308fe1b2b10b12a"),
+    "propertyType" : "HOUSE",
+    "area" : NumberInt(100),
+    "price" : NumberInt(100),
+    "city" : "asd",
+    "district" : "asd",
+    "description" : "asd",
+    "userId" : "664d17590dbfccb989e18594",
+    "createdAt" : ISODate("2024-05-22T01:10:45.447+0000"),
+    "updatedAt" : ISODate("2024-05-22T01:10:45.447+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("664d46207308fe1b2b10b12c"),
+    "propertyType" : "HOUSE",
+    "area" : NumberInt(100),
+    "price" : NumberInt(100),
+    "city" : "asd",
+    "district" : "asd",
+    "description" : "asd",
+    "userId" : "664d17590dbfccb989e18594",
+    "createdAt" : ISODate("2024-05-22T01:10:56.456+0000"),
+    "updatedAt" : ISODate("2024-05-22T01:10:56.456+0000"),
+    "__v" : NumberInt(0)
+}
